@@ -1,15 +1,6 @@
-
-
-
-function formatAMPM(date) {
-    var hours = date.getHours();
-    var minutes = date.getMinutes();
-    var ampm = hours >= 12 ? 'pm' : 'am';
-    hours = hours % 12;
-    hours = hours ? hours : 12; // the hour '0' should be '12'
-    minutes = minutes < 10 ? '0'+minutes : minutes;
-    var strTime = hours + ':' + minutes + ' ' + ampm;
-    return strTime;
-  }
-  
-  console.log(formatAMPM(new Date));
+//* moment().format("dddd, MMMM Do YYYY, h:mm:ss a") *//
+moment(Date);
+$("#currentDay").text(moment().format("dddd, MMMMM Do YYYY, h:mm a"));
+var currentTime = moment();
+currentTime = currentTime.startOf("hour");
+var beforeTime = moment().startOf("day").add(9, "hours");
