@@ -51,3 +51,20 @@ $(".block8").text(time8);
 var time9 = beforeTime.add(1, "h");
 time9 = time9.format("hh:mm A");
 $(".block9").text(time9);
+
+//* add colors to correspond to conditional statement which affect timeblock *//
+
+function testTime(){
+    time1 = moment().startOf("day").add(9, "hours");
+    currentTime = currentTime.startOf("hour");
+    if(currentTime.isAfter(time1)) {
+        $(".form9").addClass("past");
+    }
+    else if (currentTime.isPresent(time1)) {
+        $(".form9").addClass("present");
+    }
+    else if (currentTime.isFuturet(time1)) {
+            $(".form9").addClass("future");
+    };
+
+}
