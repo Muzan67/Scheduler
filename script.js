@@ -7,6 +7,7 @@ currentTime = currentTime.startOf("hour");
 var beforeTime = moment().startOf("day").add(9, "hours");
 
 //* var time for the hours of 9am - 5pm *//
+
 //9am
 var time1 = beforeTime.add(o, "h");
 time1 = time1.format("hh:mm A");
@@ -55,6 +56,8 @@ $(".block9").text(time9);
 //* add colors to correspond to conditional statement which affect timeblock *//
 
 function testTime(){
+
+//* time1 / form9 = 9am *//
     time1 = moment().startOf("day").add(9, "hours");
     currentTime = currentTime.startOf("hour");
     if(currentTime.isAfter(time1)) {
@@ -64,7 +67,111 @@ function testTime(){
         $(".form9").addClass("present");
     }
     else if (currentTime.isFuturet(time1)) {
-            $(".form9").addClass("future");
+        $(".form9").addClass("future");
+    };
+
+//* time2 / form10 = 10am *//
+    time2 = moment().startOf("day").add(10, "hours");
+    currentTime = currentTime.startOf("hour");
+    if(currentTime.isAfter(time2)) {
+        $(".form10").addClass("past");
+    }
+    else if (currentTime.isPresent(time2)) {
+        $(".form10").addClass("present");
+    }
+    else if (currentTime.isFuturet(time2)) {
+        $(".form10").addClass("future");
+    };
+
+//* time3 / form11 = 11am *//
+    time3 = moment().startOf("day").add(11, "hours");
+    currentTime = currentTime.startOf("hour");
+    if(currentTime.isAfter(time3)) {
+        $(".form11").addClass("past");
+    }
+    else if (currentTime.isPresent(time3)) {
+        $(".form11").addClass("present");
+    }
+    else if (currentTime.isFuturet(time3)) {
+        $(".form11").addClass("future");
+    };
+ 
+//* time4 / form12 = 12pm *//
+    time4 = moment().startOf("day").add(12, "hours");
+    currentTime = currentTime.startOf("hour");
+    if(currentTime.isAfter(time4)) {
+        $(".form12").addClass("past");
+    }
+    else if (currentTime.isPresent(time4)) {
+        $(".form12").addClass("present");
+    }
+    else if (currentTime.isFuturet(time4)) {
+        $(".form12").addClass("future");
+    };
+
+//* time5 / form1 = 1pm *//
+    time5 = moment().startOf("day").add(13, "hours");
+    currentTime = currentTime.startOf("hour");
+    if(currentTime.isAfter(time5)) {
+        $(".form1").addClass("past");
+    }
+    else if (currentTime.isPresent(time5)) {
+        $(".form1").addClass("present");
+    }
+    else if (currentTime.isFuturet(time5)) {
+        $(".form1").addClass("future");
+    };
+
+//* time6 / form2 = 2pm *//
+    time6 = moment().startOf("day").add(14, "hours");
+    currentTime = currentTime.startOf("hour");
+    if(currentTime.isAfter(time6)) {
+        $(".form2").addClass("past");
+    }
+    else if (currentTime.isPresent(time6)) {
+        $(".form2").addClass("present");
+    }
+    else if (currentTime.isFuturet(time6)) {
+        $(".form2").addClass("future");
+    };
+
+//* time7 / form3 = 3pm *//
+    time7 = moment().startOf("day").add(15, "hours");
+    currentTime = currentTime.startOf("hour");
+    if(currentTime.isAfter(time7)) {
+        $(".form3").addClass("past");
+    }
+    else if (currentTime.isPresent(time7)) {
+        $(".form3").addClass("present");
+    }
+    else if (currentTime.isFuturet(time7)) {
+        $(".form3").addClass("future");
+    };
+
+//* time8 / form4 = 4pm *//
+    time8 = moment().startOf("day").add(16, "hours");
+    currentTime = currentTime.startOf("hour");
+    if(currentTime.isAfter(time8)) {
+        $(".form4").addClass("past");
+    }
+    else if (currentTime.isPresent(time8)) {
+        $(".form4").addClass("present");
+    }
+    else if (currentTime.isFuturet(time8)) {
+        $(".form4").addClass("future");
+    };
+
+//* time9 / form5 = 5pm *//
+    time9 = moment().startOf("day").add(17, "hours");
+    currentTime = currentTime.startOf("hour");
+    if(currentTime.isAfter(time9)) {
+        $(".form5").addClass("past");
+    }
+    else if (currentTime.isPresent(time9)) {
+        $(".form5").addClass("present");
+    }
+    else if (currentTime.isFuturet(time9)) {
+        $(".form5").addClass("future");
     };
 
 }
