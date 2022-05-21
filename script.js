@@ -63,10 +63,10 @@ function testTime(){
     if(currentTime.isAfter(time1)) {
         $(".form9").addClass("past");
     }
-    else if (currentTime.isPresent(time1)) {
+    else if (currentTime.isSameOrAfter(time1)) {
         $(".form9").addClass("present");
     }
-    else if (currentTime.isFuturet(time1)) {
+    else if (currentTime.isBefore(time1)) {
         $(".form9").addClass("future");
     };
 
@@ -76,10 +76,10 @@ function testTime(){
     if(currentTime.isAfter(time2)) {
         $(".form10").addClass("past");
     }
-    else if (currentTime.isPresent(time2)) {
+    else if (currentTime.isSameOrAfter(time2)) {
         $(".form10").addClass("present");
     }
-    else if (currentTime.isFuturet(time2)) {
+    else if (currentTime.isBefore(time2)) {
         $(".form10").addClass("future");
     };
 
@@ -89,10 +89,10 @@ function testTime(){
     if(currentTime.isAfter(time3)) {
         $(".form11").addClass("past");
     }
-    else if (currentTime.isPresent(time3)) {
+    else if (currentTime.isSameOrAfter(time3)) {
         $(".form11").addClass("present");
     }
-    else if (currentTime.isFuturet(time3)) {
+    else if (currentTime.isBefore(time3)) {
         $(".form11").addClass("future");
     };
  
@@ -102,10 +102,10 @@ function testTime(){
     if(currentTime.isAfter(time4)) {
         $(".form12").addClass("past");
     }
-    else if (currentTime.isPresent(time4)) {
+    else if (currentTime.isSameOrAfter(time4)) {
         $(".form12").addClass("present");
     }
-    else if (currentTime.isFuturet(time4)) {
+    else if (currentTime.isBefore(time4)) {
         $(".form12").addClass("future");
     };
 
@@ -115,10 +115,10 @@ function testTime(){
     if(currentTime.isAfter(time5)) {
         $(".form1").addClass("past");
     }
-    else if (currentTime.isPresent(time5)) {
+    else if (currentTime.isSameOrAfter(time5)) {
         $(".form1").addClass("present");
     }
-    else if (currentTime.isFuturet(time5)) {
+    else if (currentTime.isBefore(time5)) {
         $(".form1").addClass("future");
     };
 
@@ -128,10 +128,10 @@ function testTime(){
     if(currentTime.isAfter(time6)) {
         $(".form2").addClass("past");
     }
-    else if (currentTime.isPresent(time6)) {
+    else if (currentTime.isSameOrAfter(time6)) {
         $(".form2").addClass("present");
     }
-    else if (currentTime.isFuturet(time6)) {
+    else if (currentTime.isBefore(time6)) {
         $(".form2").addClass("future");
     };
 
@@ -141,10 +141,10 @@ function testTime(){
     if(currentTime.isAfter(time7)) {
         $(".form3").addClass("past");
     }
-    else if (currentTime.isPresent(time7)) {
+    else if (currentTime.isSameOrAfter(time7)) {
         $(".form3").addClass("present");
     }
-    else if (currentTime.isFuturet(time7)) {
+    else if (currentTime.isBefore(time7)) {
         $(".form3").addClass("future");
     };
 
@@ -154,10 +154,10 @@ function testTime(){
     if(currentTime.isAfter(time8)) {
         $(".form4").addClass("past");
     }
-    else if (currentTime.isPresent(time8)) {
+    else if (currentTime.isSameOrAfter(time8)) {
         $(".form4").addClass("present");
     }
-    else if (currentTime.isFuturet(time8)) {
+    else if (currentTime.isBefore(time8)) {
         $(".form4").addClass("future");
     };
 
@@ -167,10 +167,10 @@ function testTime(){
     if(currentTime.isAfter(time9)) {
         $(".form5").addClass("past");
     }
-    else if (currentTime.isPresent(time9)) {
+    else if (currentTime.isSameOrAfter(time9)) {
         $(".form5").addClass("present");
     }
-    else if (currentTime.isFuturet(time9)) {
+    else if (currentTime.isBefore(time9)) {
         $(".form5").addClass("future");
     };
 }
