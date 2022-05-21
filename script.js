@@ -9,7 +9,7 @@ var beforeTime = moment().startOf("day").add(9, "hours");
 //* var time for the hours of 9am - 5pm *//
 
 //9am
-var time1 = beforeTime.add(o, "h");
+var time1 = beforeTime.add(0, "h");
 time1 = time1.format("hh:mm A");
 $(".block1").text(time1);
 
@@ -185,7 +185,7 @@ for (var i = 0; i < x.length; i++) {
 
 //* Local Storage *//
 
-$(".saveBtn").click(function () {
+$(".saveBtn").click(function (event) {
     event.preventDefault();
     var formValue = $(this).siblings(".form-control").val();
     var listItem = $(this).parent().data("hour");
