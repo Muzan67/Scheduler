@@ -22,4 +22,6 @@ THEN the saved events persist
 
 # Credit
 
-Moment.js - I used this app to help me start the assignment as it is the first time that I am creatinhg this app. 
+Moment.js - I used this app to help me start place the time on the header of the page. 
+https://getbootstrap.com/docs - This is where I received the documentation and instructions on how to use input groups and form controls.
+https://fontawesome.com/v5/icons/save - I used the website for the save icon on my html.

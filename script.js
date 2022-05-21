@@ -1,6 +1,6 @@
 //* moment().format("dddd, MMMM Do YYYY, h:mm:ss a") moment.js code*//
 
-moment(Date);
+moment(currentDay);
 $("#currentDay").text(moment().format("dddd, MMMMM Do YYYY, h:mm a"));
 var currentTime = moment();
 currentTime = currentTime.startOf("hour");
