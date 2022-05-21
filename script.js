@@ -173,5 +173,23 @@ function testTime(){
     else if (currentTime.isFuturet(time9)) {
         $(".form5").addClass("future");
     };
-
 }
+testTime();
+
+var x = [9,10,11,12,1,2,3,4,5];
+
+for (var i = 0; i < x.length; i++) {
+    var dataHour = localStorage.getItem(x[i]);
+    $(".form" + x[i]).val(dataHour);
+}
+
+//* Local Storage *//
+
+$(".saveBtn").click(function () {
+    event.preventDefault();
+    var formValue = $(this).siblings(".form-control").val();
+    var listItem = $(this).parent().data("hour");
+
+    localStorage.setItem(listItem, formValue);
+});
+
