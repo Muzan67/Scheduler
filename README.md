@@ -23,5 +23,10 @@ THEN the saved events persist
 # Credit
 
 Moment.js - I used this app to help me start place the time on the header of the page. 
+
 https://getbootstrap.com/docs - This is where I received the documentation and instructions on how to use input groups and form controls.
+
 https://fontawesome.com/v5/icons/save - I used the website for the save icon on my html.
+
+
+https://columbia.bootcampcontent.com/columbia-bootcamp/CU-VIRT-BO-FSF-PT-04-2022-U-B/-/raw/main/05-Third-Party-APIs/02-Challenge/Assets/05-third-party-apis-homework-demo.gif
