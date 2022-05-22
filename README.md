@@ -8,8 +8,7 @@ The starter code uses the Moment.js library to work with date and time. but you'
 # Intsallation
 
 The current display of the date and time has been achieved. The timeblocks are represented and change color depending of the time of day.
-We can also save what we type in the hour of the daily planner. When we refresh the daily planner page we see what we wrote in the time
-block saves what was written. 
+We can also save what we type in the hour of the daily planner. 
 
 # Credit
 
